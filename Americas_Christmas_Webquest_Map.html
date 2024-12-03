@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa9b7605181a8729eb4e7581f907a66d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa9b7605181a8729eb4e7581f907a66d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa9b7605181a8729eb4e7581f907a66d = L.map(
+                "map_aa9b7605181a8729eb4e7581f907a66d",
+                {
+                    center: [15.0, -80.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e085b9df1b2acb8b5647e20829bd66cb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+            var marker_e198f4af99d2990ef1209c9f61a5ba69 = L.marker(
+                [23.6345, -102.5528],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_4c5cfe4168fbab9629c3c3197fe075c3 = L.popup({"maxWidth": 300});
+
+        
+            var html_2b8645dbe8f88b118ed023b9f36ae4b3 = $(`<div id="html_2b8645dbe8f88b118ed023b9f36ae4b3" style="width: 100.0%; height: 100.0%;"><b>Questions for Mexico:</b><br><a href="https://example.com/mexico-las-posadas" target="_blank">What is the name of the reenactment of Mary and Joseph's journey that is celebrated in Mexico?</a><br><a href="https://example.com/mexico-food" target="_blank">What kind of food is traditionally eaten during Las Posadas?</a><br></div>`)[0];
+            popup_4c5cfe4168fbab9629c3c3197fe075c3.setContent(html_2b8645dbe8f88b118ed023b9f36ae4b3);
+        
+
+        marker_e198f4af99d2990ef1209c9f61a5ba69.bindPopup(popup_4c5cfe4168fbab9629c3c3197fe075c3)
+        ;
+
+        
+    
+    
+            var marker_1b0a9de5cd51c9517cb0ea96514b2ec2 = L.marker(
+                [15.7835, -90.2308],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_d20caff2597c906ecdab660f6dedbf0a = L.popup({"maxWidth": 300});
+
+        
+            var html_3a48e3e5ad2ea55ba454c9772d2e1c0c = $(`<div id="html_3a48e3e5ad2ea55ba454c9772d2e1c0c" style="width: 100.0%; height: 100.0%;"><b>Questions for Guatemala:</b><br><a href="https://example.com/guatemala-quema-del-diablo" target="_blank">What do Guatemalans burn in a tradition called 'La Quema del Diablo' during the Christmas season?</a><br><a href="https://example.com/guatemala-tamales" target="_blank">What is the name of the traditional Christmas dessert made of sweetened tamales?</a><br></div>`)[0];
+            popup_d20caff2597c906ecdab660f6dedbf0a.setContent(html_3a48e3e5ad2ea55ba454c9772d2e1c0c);
+        
+
+        marker_1b0a9de5cd51c9517cb0ea96514b2ec2.bindPopup(popup_d20caff2597c906ecdab660f6dedbf0a)
+        ;
+
+        
+    
+    
+            var marker_5de58d8e93b4e15759e087939de09e80 = L.marker(
+                [14.6415, -86.6196],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_20c2083b44a4b3387b05079bd7252ddc = L.popup({"maxWidth": 300});
+
+        
+            var html_02a701898f73c07b53179e64808b5c42 = $(`<div id="html_02a701898f73c07b53179e64808b5c42" style="width: 100.0%; height: 100.0%;"><b>Questions for Honduras:</b><br><a href="https://example.com/honduras-christmas-eve" target="_blank">How do Hondurans celebrate Christmas Eve?</a><br><a href="https://example.com/honduras-food" target="_blank">What is a popular Honduran Christmas dish?</a><br></div>`)[0];
+            popup_20c2083b44a4b3387b05079bd7252ddc.setContent(html_02a701898f73c07b53179e64808b5c42);
+        
+
+        marker_5de58d8e93b4e15759e087939de09e80.bindPopup(popup_20c2083b44a4b3387b05079bd7252ddc)
+        ;
+
+        
+    
+    
+            var marker_be7e3e228471cbda781944288de92cd0 = L.marker(
+                [13.7942, -88.8965],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_68a25e0ef76de2b63b2d1870b2227e81 = L.popup({"maxWidth": 300});
+
+        
+            var html_5a6a82e1bb7ec3b60cacdefd6636617f = $(`<div id="html_5a6a82e1bb7ec3b60cacdefd6636617f" style="width: 100.0%; height: 100.0%;"><b>Questions for El Salvador:</b><br><a href="https://example.com/el-salvador-christmas-eve" target="_blank">What do Salvadorans light on Christmas Eve to celebrate?</a><br><a href="https://example.com/el-salvador-bread" target="_blank">What is the name of the traditional holiday bread in El Salvador?</a><br></div>`)[0];
+            popup_68a25e0ef76de2b63b2d1870b2227e81.setContent(html_5a6a82e1bb7ec3b60cacdefd6636617f);
+        
+
+        marker_be7e3e228471cbda781944288de92cd0.bindPopup(popup_68a25e0ef76de2b63b2d1870b2227e81)
+        ;
+
+        
+    
+    
+            var marker_6eab15360cc1fe8698299c3455196393 = L.marker(
+                [12.8654, -85.2072],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_7a9e22cc136bc547b68d68e8f4af75f6 = L.popup({"maxWidth": 300});
+
+        
+            var html_1edc2260f4191099872c29ae95403318 = $(`<div id="html_1edc2260f4191099872c29ae95403318" style="width: 100.0%; height: 100.0%;"><b>Questions for Nicaragua:</b><br><a href="https://example.com/nicaragua-celebration" target="_blank">What is the name of the traditional Christmas celebration honoring the Virgin Mary?</a><br><a href="https://example.com/nicaragua-drink" target="_blank">What is a common Christmas drink in Nicaragua?</a><br></div>`)[0];
+            popup_7a9e22cc136bc547b68d68e8f4af75f6.setContent(html_1edc2260f4191099872c29ae95403318);
+        
+
+        marker_6eab15360cc1fe8698299c3455196393.bindPopup(popup_7a9e22cc136bc547b68d68e8f4af75f6)
+        ;
+
+        
+    
+    
+            var marker_590ab1300186c95304c5f069dcc4a35b = L.marker(
+                [9.7489, -83.7534],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_0e1a57ba88aad18b4eb689a26024f267 = L.popup({"maxWidth": 300});
+
+        
+            var html_b352f7c5bc6a879e8a92554eba3b19c1 = $(`<div id="html_b352f7c5bc6a879e8a92554eba3b19c1" style="width: 100.0%; height: 100.0%;"><b>Questions for Costa Rica:</b><br><a href="https://example.com/costa-rica-dish" target="_blank">What is the traditional Costa Rican Christmas dish called?</a><br><a href="https://example.com/costa-rica-tree" target="_blank">What is unique about the Christmas tree decorations in Costa Rica?</a><br></div>`)[0];
+            popup_0e1a57ba88aad18b4eb689a26024f267.setContent(html_b352f7c5bc6a879e8a92554eba3b19c1);
+        
+
+        marker_590ab1300186c95304c5f069dcc4a35b.bindPopup(popup_0e1a57ba88aad18b4eb689a26024f267)
+        ;
+
+        
+    
+    
+            var marker_ee00ab609f5096880bcf9ed5876f9eb9 = L.marker(
+                [8.5379, -80.7821],
+                {}
+            ).addTo(map_aa9b7605181a8729eb4e7581f907a66d);
+        
+    
+        var popup_a0373b0dd37fd307ede798f24cde5351 = L.popup({"maxWidth": 300});
+
+        
+            var html_f83d54aa96126beba4bbb2aafad229d5 = $(`<div id="html_f83d54aa96126beba4bbb2aafad229d5" style="width: 100.0%; height: 100.0%;"><b>Questions for Panama:</b><br><a href="https://example.com/panama-parades" target="_blank">How do Panamanians celebrate Christmas with parades?</a><br><a href="https://example.com/panama-tamales" target="_blank">What traditional Christmas food is similar to tamales in Panama?</a><br></div>`)[0];
+            popup_a0373b0dd37fd307ede798f24cde5351.setContent(html_f83d54aa96126beba4bbb2aafad229d5);
+        
+
+        marker_ee00ab609f5096880bcf9ed5876f9eb9.bindPopup(popup_a0373b0dd37fd307ede798f24cde5351)
+        ;
+
+        
+    
+</script>
+</html>
